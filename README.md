@@ -1,5 +1,5 @@
 # QT-postgres-custom
-custom version of psql plugin (driver) to QtSQL. Based on Qt 5.11.1 version.
+Changed version of psql plugin (driver) to QtSQL. Based on Qt 5.11.1 version.
 
 **Not fully tested, may contains errors**
 
