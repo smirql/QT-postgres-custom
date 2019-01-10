@@ -10,6 +10,8 @@ Added support :
 ## Installation
 
 ``` bash
+sudo apt install libpq-dev pkg-config
+
 cd $QT_SRC/qtbase/src/plugins/sqldrivers/
 git clone git@github.com:smirql/QT-postgres-custom.git smpsql
 cd smpsql
