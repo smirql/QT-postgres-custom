@@ -96,6 +96,7 @@
 // add json
 
 #define SMJSONOID 114
+#define SMJSONBOID 3802
 
 // add arrays
 
@@ -118,6 +119,7 @@
 #define SMXID_ARRAYOID 1011
 #define SMCID_ARRAYOID 1012
 #define SMJSON_ARRAYOID 199
+#define SMJSONB_ARRAYOID 3807
 
 #define SMVARCHAR_ARRAYOID 1015
 #define SMTEXT_ARRAYOID 1009
@@ -491,6 +493,7 @@ static QSMPSQLResult::DataType qDecodePSQLType(int t)
         type.variant = QVariant::ByteArray;
         break;
     case SMJSONOID:
+    case SMJSONBOID:
         type.variant = QVariant::UserType;
         type.metatype = QMetaType::QJsonDocument;
         break;
@@ -537,6 +540,7 @@ static QSMPSQLResult::DataType qDecodePSQLType(int t)
         type.variant = QVariant::ByteArray;
         break;
     case SMJSON_ARRAYOID:
+    case SMJSONB_ARRAYOID:
         type.isArray = true;
         type.variant = QVariant::UserType;
         type.metatype = QMetaType::QJsonDocument;
